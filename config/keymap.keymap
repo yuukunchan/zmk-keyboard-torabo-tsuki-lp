@@ -20,11 +20,11 @@
 
         layer_0 {
             bindings = <
-&kp ESC    &kp N1            &kp N2        &kp N3    &kp N4    &kp N5                                      &kp N6  &kp N7    &kp N8     &kp N9    &kp N0     &kp BACKSPACE
-&kp TAB    &kp Q             &kp W         &kp E     &kp R     &kp T                                       &kp Y   &kp U     &kp I      &kp O     &kp P      &kp BSPC
-&kp CAPS   &kp A             &kp S         &kp D     &kp F     &kp G   &mkp LCLK  &mkp RCLK                &kp H   &kp J     &kp K      &kp L     &kp ENTER  &kp SQT
-&kp LSHFT  &kp Z             &kp X         &kp C     &kp V     &kp B   &kp ESC    &kp LANG_ZENKAKUHANKAKU  &kp N   &kp M     &kp COMMA  &kp DOT   &kp MINUS  &kp RSHFT
-&kp LCTRL  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LALT  &kp BSPC  &mo 2   &kp SPACE  &kp DELETE               &mo 1   &kp BSPC  &kp RALT   &kp BSLH  &kp RSHFT  &kp RCTRL
+&kp ESC    &kp N1            &kp N2        &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9    &kp N0     &kp BACKSPACE
+&kp TAB    &kp Q             &kp W         &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O     &kp P      &kp BSPC
+&kp CAPS   &kp A             &kp S         &kp D     &kp F     &kp G   &mkp LCLK  &mkp RCLK   &kp H   &kp J     &kp K      &kp L     &kp ENTER  &kp SQT
+&kp LSHFT  &kp Z             &kp X         &kp C     &kp V     &kp B   &kp ESC    &kp F13     &kp N   &kp M     &kp COMMA  &kp DOT   &kp MINUS  &kp RSHFT
+&kp LCTRL  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LALT  &kp BSPC  &mo 2   &kp SPACE  &kp DELETE  &mo 1   &kp BSPC  &kp RALT   &kp BSLH  &kp RSHFT  &kp RCTRL
             >;
         };
 
@@ -34,7 +34,7 @@
 &trans  &kp N1  &kp N2  &kp N3     &kp N4     &kp N5                  &kp N6  &kp N7        &kp N8  &kp N9  &kp N0  &trans
 &trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5  &kp N6  &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &kp N0  &kp N1        &kp N2  &kp N3  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &to 3   &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &to 3   &to 1   &trans  &trans  &trans        &trans  &trans  &trans  &trans
             >;
         };
 
@@ -44,7 +44,7 @@
 &trans  &kp ESCAPE        &kp F1  &kp F2   &kp F3   &kp F4                   &kp F7          &kp F8          &kp F9    &kp F10    &kp BACKSPACE   &trans
 &trans  &kp TAB           &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &kp LEFT_BRACE  &mkp LCLK       &kp UP    &mkp RCLK  &kp COLON       &trans
 &trans  &kp LEFT_SHIFT    &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &kp LS(MINUS)   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &msc SCRL_UP    &trans
-&trans  &kp LEFT_CONTROL  &trans  &trans   &trans   &trans   &trans  &trans  &to 3           &kp DEL         &trans    &trans     &msc SCRL_DOWN  &trans
+&trans  &kp LEFT_CONTROL  &trans  &trans   &trans   &trans   &trans  &to 2   &to 3           &kp DEL         &trans    &trans     &msc SCRL_DOWN  &trans
             >;
         };
 
