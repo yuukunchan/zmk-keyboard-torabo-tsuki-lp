@@ -14,13 +14,11 @@
             layers = <2>;
         };
 
-        to0 {
-            bindings = <&to 0>;
-            key-positions = <57 60>;
-            layers = <3>;
+        mouse {
+            bindings = <&to 2>;
+            key-positions = <64 63>;
             slow-release;
-            timeout-ms = <0>;
-            require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
@@ -64,6 +62,16 @@
 &trans  &kp F6      &kp F7   &kp F8        &kp F9          &kp F10     &trans  &trans  &kp LEFT          &kp DOWN   &kp UP_ARROW   &kp RIGHT  &kp TAB     &trans
 &trans  &kp F11     &kp F12  &out OUT_USB  &bt BT_CLR_ALL  &bt BT_NXT  &to 0   &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
 &trans  &sys_reset  &trans   &trans        &kp DELETE      &trans      &trans  &trans  &trans            &trans     &trans         &trans     &sys_reset  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
